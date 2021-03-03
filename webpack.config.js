@@ -8,14 +8,14 @@ module.exports = {
   },
   module: {
     rules: [
-			{
-        test: /\.(png|jpg|svg|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
-      },
+			// {
+      //   test: /\.(png|jpg|svg|gif)$/i,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //     },
+      //   ],
+      // },
       {
         test: /\.js$/,
         exclude: /node_modules/,
