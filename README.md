@@ -1,1 +1,1 @@
-# le-restaurant
+This project is part of The Odin Project's Javascript course. The objective is to build a restaurant web page library.
