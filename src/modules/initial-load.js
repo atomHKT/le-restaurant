@@ -19,7 +19,7 @@ const renderMain = () => {
     const linkLogo = createDomElem('a');
     linkLogo.href = "#home";
     const logoImg = createDomElem('img');
-    logoImg.src = '../../dist/images/logo-white.png';
+    logoImg.src = '/dist/images/logo-white.png';
     logoImg.alt = 'Le Restaurant Logo';
     const menuBtn = createDomElem('div', '', 'menu-btn');
     const menuIcon = createDomElem('i', '', ['fas', 'fa-bars']);
