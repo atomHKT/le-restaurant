@@ -1,14 +1,19 @@
-import L from "./leaflet";
+import L from 'leaflet';
 
+import 'leaflet/dist/leaflet.css';
 
-L.Icon.Default.imagePath = '.';
-// delete L.Icon.Default.prototype._getIconUrl;
+// stupid hack so that leaflet's images work after going through webpack
+import marker from 'leaflet/dist/images/marker-icon.png';
+import marker2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
-// L.Icon.Default.mergeOptions({
-//   iconRetinaUrl: require('./images/marker-icon-2x.png'),
-//   iconUrl: require('./images/marker-icon.png'),
-//   shadowUrl: require('./images/marker-shadow.png'),
-// });
+delete L.Icon.Default.prototype._getIconUrl;
+
+L.Icon.Default.mergeOptions({
+    iconRetinaUrl: marker2x,
+    iconUrl: marker,
+    shadowUrl: markerShadow
+});
 
 const renderMap = () => {
   const maxZoom = 22;

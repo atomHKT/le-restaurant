@@ -15,7 +15,10 @@
     "@babel/core": "^7.13.8",
     "@babel/preset-env": "^7.13.9",
     "babel-loader": "^8.2.2",
+    "css-loader": "^5.1.1",
+    "file-loader": "^6.2.0",
     "leaflet": "^1.7.1",
+    "style-loader": "^2.0.0",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1"
   },
