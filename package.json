@@ -19,6 +19,7 @@
     "file-loader": "^6.2.0",
     "leaflet": "^1.7.1",
     "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.1"
   },

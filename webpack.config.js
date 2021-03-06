@@ -21,9 +21,13 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: "file-loader",
+            loader: "url-loader",
             options: {
-              name: "[path][name].[ext]",
+							limit: 100000,
+							fallback: 'file-loader',
+							name: '[name].[ext]',
+							publicPath: 'images/',
+							outputPath: 'images/'
             },
           },
         ],
