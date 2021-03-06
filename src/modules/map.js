@@ -1,3 +1,5 @@
+import L from "./leaflet";
+
 const renderMap = () => {
   const maxZoom = 22;
 

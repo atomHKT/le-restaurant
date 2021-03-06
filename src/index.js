@@ -4,7 +4,6 @@ import renderMenu from "./modules/menu";
 import renderAbout from "./modules/about";
 import renderContact from "./modules/contact";
 import renderMap from "./modules/map";
-import L from "./modules/leaflet";
 
 const main = renderMain();
 
