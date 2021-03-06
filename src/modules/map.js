@@ -1,5 +1,4 @@
 import L from 'leaflet';
-
 import 'leaflet/dist/leaflet.css';
 
 // stupid hack so that leaflet's images work after going through webpack

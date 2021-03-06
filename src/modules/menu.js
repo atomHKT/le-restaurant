@@ -1,4 +1,5 @@
 import { createDomElem, displayScrollArrows } from "./utilities";
+import '/dist/styles/menu.css';
 
 const renderMenu = (domSection) => {
   const menu = createDomElem("section", "menu");

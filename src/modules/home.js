@@ -1,4 +1,5 @@
 import { createDomElem } from "./utilities";
+import '/dist/styles/home.css';
 
 const renderHome = (domSection) => {
   const home = createDomElem("section", "home");

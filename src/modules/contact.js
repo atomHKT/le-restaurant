@@ -1,4 +1,5 @@
 import { createDomElem, displayScrollArrows } from "./utilities";
+import '/dist/styles/contact.css';
 
 const renderContact = (domSection) => {
   const contact = createDomElem("section", "contact");

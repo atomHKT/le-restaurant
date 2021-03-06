@@ -1,4 +1,5 @@
 import { createDomElem, displayScrollArrows } from "./utilities";
+import '/dist/styles/about.css';
 
 const renderAbout = (domSection) => {
   const about = createDomElem("section", "about");

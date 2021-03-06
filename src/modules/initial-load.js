@@ -1,6 +1,10 @@
 import {
     createDomElem
 } from './utilities';
+import logoPic from "/dist/images/logo-white.png";
+import '/dist/styles/main.css';
+
+
 
 const navItemArr = ['Home', 'Menu', 'About', 'Contact'];
 const socialItemArr = [
@@ -19,7 +23,7 @@ const renderMain = () => {
     const linkLogo = createDomElem('a');
     linkLogo.href = "#home";
     const logoImg = createDomElem('img');
-    logoImg.src = './images/logo-white.png';
+    logoImg.src = logoPic;
     logoImg.alt = 'Le Restaurant Logo';
     const menuBtn = createDomElem('div', '', 'menu-btn');
     const menuIcon = createDomElem('i', '', ['fas', 'fa-bars']);
