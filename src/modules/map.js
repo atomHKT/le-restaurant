@@ -1,4 +1,4 @@
-import L, { map } from "leaflet";
+import L, { map } from "./leaflet";
 
 const renderMap = () => {
   const maxZoom = 22;
