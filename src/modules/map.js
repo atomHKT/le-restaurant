@@ -1,5 +1,15 @@
 import L from "./leaflet";
 
+
+L.Icon.Default.imagePath = '.';
+// delete L.Icon.Default.prototype._getIconUrl;
+
+// L.Icon.Default.mergeOptions({
+//   iconRetinaUrl: require('./images/marker-icon-2x.png'),
+//   iconUrl: require('./images/marker-icon.png'),
+//   shadowUrl: require('./images/marker-shadow.png'),
+// });
+
 const renderMap = () => {
   const maxZoom = 22;
 
@@ -11,7 +21,7 @@ const renderMap = () => {
   }).setView(markerLR.getLatLng(), 13);
 
   markerLR.addTo(myMap);
-  markerLR.bindPopup(`<b>Le Restaurant</b>`);
+  markerLR.bindPopup(`<b>Le Restaurant</b>`).openPopup();
 
   L.control.scale().addTo(myMap);
 
