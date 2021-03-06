@@ -11,7 +11,7 @@ const renderMap = () => {
   }).setView(markerLR.getLatLng(), 13);
 
   markerLR.addTo(myMap);
-  markerLR.bindPopup(`<b>Le Restaurant</b>`).openPopup();
+  markerLR.bindPopup(`<b>Le Restaurant</b>`);
 
   L.control.scale().addTo(myMap);
 
