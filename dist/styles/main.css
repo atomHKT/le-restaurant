@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:600|Roboto+Slab");
-@import url("./home.css");
-@import url("./menu.css");
-@import url("./contact.css");
 
 ::-webkit-scrollbar {
   display: none;
